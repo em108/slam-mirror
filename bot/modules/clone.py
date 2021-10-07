@@ -66,7 +66,7 @@ def cloneNode(update, context):
         if button in ["cancelled", ""]:
             sendMessage(men + result, context.bot, update)
         else:
-            sendMarkup(result + cc, context.bot, update, button)
+            sendMessage(result + cc, context.bot, update)
     else:
         sendMessage('Provide G-Drive Shareable Link to Clone.', context.bot, update)
 
